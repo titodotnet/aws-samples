@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AWSSampleConsoleApp1.CopyFromBlobToS3</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
       <HintPath>..\packages\AWSSDK.Core.3.3.21.15\lib\net45\AWSSDK.Core.dll</HintPath>
@@ -60,6 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlobToS3\BlobToS3Manager.cs" />
+    <Compile Include="BlobToS3\BlobToS3Request.cs" />
+    <Compile Include="BlobToS3\BlobToS3Response.cs" />
+    <Compile Include="BlobToS3\IBlobToS3Manager.cs" />
+    <Compile Include="CopyFromBlobToS3.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UploadLargeFileAsChunk.cs" />
